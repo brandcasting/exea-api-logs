@@ -1,23 +1,26 @@
 <?php
 
-namespace App\Modules\SongRequest\Models;
+namespace App\Modules\Liked\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SongRequestLog extends Model
+class LikedLog extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'username',
-        'email',
-        'phone',
-        'song_name',
-        'album',
+        "username",
+        "email",
+        "phone",
         "pos_id",
         "pos",
         "client_id",
         "client",
+        "status",
+        "value",
+        "title",
+        "author",
+        "name_rule",
     ];
 }
