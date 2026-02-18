@@ -7,74 +7,123 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body
-    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-950 via-gray-900 to-indigo-950 text-white"
->
-<!-- Fondo animado -->
-<div class="absolute inset-0 overflow-hidden">
+<body class="bg-gray-950 text-white overflow-x-hidden">
+
+<!-- Background Effects -->
+<div class="absolute inset-0 -z-10">
     <div
-        class="absolute -top-32 -left-32 w-96 h-96 bg-indigo-600 opacity-30 blur-3xl rounded-full animate-pulse"
+        class="absolute top-[-200px] left-[-150px] w-[500px] h-[500px] bg-indigo-600/30 blur-[140px] rounded-full animate-pulse"
     ></div>
+
     <div
-        class="absolute bottom-0 right-0 w-96 h-96 bg-pink-600 opacity-20 blur-3xl rounded-full animate-pulse"
+        class="absolute bottom-[-200px] right-[-150px] w-[500px] h-[500px] bg-pink-500/20 blur-[140px] rounded-full animate-pulse"
     ></div>
 </div>
 
-<!-- Card principal -->
-<div
-    class="relative z-10 max-w-xl w-full mx-6 p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl text-center animate-fadeIn"
->
-    <!-- Icono -->
-    <div
-        class="w-20 h-20 mx-auto flex items-center justify-center rounded-2xl bg-indigo-500/20 border border-indigo-400/30 mb-6"
-    >
-        🚀
-    </div>
+<!-- Navbar -->
+<header class="w-full px-8 py-6 flex justify-between items-center">
+    <h2 class="text-xl font-bold tracking-tight">
+        BrandCasting<span class="text-indigo-400">API</span>
+    </h2>
 
-    <!-- Título -->
-    <h1 class="text-4xl font-extrabold tracking-tight mb-4">
-        BrandCasting API
-    </h1>
-
-    <!-- Texto -->
-    <p class="text-gray-300 text-lg leading-relaxed mb-8">
-        Este servicio corresponde a una <span class="text-indigo-400 font-semibold">API</span>.
-        <br />
-        Por favor visita nuestro sitio oficial para más información.
-    </p>
-
-    <!-- Botón -->
     <a
         href="https://brandcasting.com.co"
         target="_blank"
-        class="inline-flex items-center gap-2 px-8 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 transition-all duration-300 shadow-lg shadow-indigo-700/30 font-semibold text-lg"
+        class="text-gray-300 hover:text-white transition"
     >
-        Ir a BrandCasting
-        <span class="animate-bounce">→</span>
+        Sitio oficial →
     </a>
+</header>
+
+<!-- Main -->
+<main class="max-w-6xl mx-auto px-6 py-20">
+
+    <!-- Hero Section -->
+    <section class="text-center space-y-8">
+
+        <!-- Badge -->
+        <div
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300"
+        >
+            🚀 Plataforma API en producción
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-ping"></span>
+        </div>
+
+        <!-- Title -->
+        <h1
+            class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight"
+        >
+            Bienvenido a la
+            <span
+                class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent"
+            >
+            BrandCasting API
+          </span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+            Este endpoint corresponde a un servicio backend diseñado para integraciones,
+            automatización y operaciones internas.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
+
+            <a
+                href="https://brandcasting.com.co"
+                target="_blank"
+                class="px-8 py-4 rounded-2xl bg-indigo-600 hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-700/30 font-semibold text-lg"
+            >
+                Ir al sitio oficial
+            </a>
+
+            <a
+                href="#"
+                class="px-8 py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all font-semibold text-lg"
+            >
+                Documentación próximamente
+            </a>
+        </div>
+    </section>
+
+    <!-- Feature Grid -->
+    <section
+        class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-left"
+    >
+        <!-- Card -->
+        <div
+            class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-indigo-500/40 transition-all"
+        >
+            <h3 class="text-xl font-semibold mb-3">⚡ API Rápida</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Respuestas optimizadas para integraciones modernas y escalables.
+            </p>
+        </div>
+
+        <div
+            class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-pink-500/40 transition-all"
+        >
+            <h3 class="text-xl font-semibold mb-3">🔒 Segura</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Autenticación robusta y prácticas modernas de protección de datos.
+            </p>
+        </div>
+
+        <div
+            class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-green-500/40 transition-all"
+        >
+            <h3 class="text-xl font-semibold mb-3">🌍 Conectada</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Diseñada para operar con aplicaciones web, móviles y servicios externos.
+            </p>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <p class="mt-10 text-sm text-gray-500">
-        © 2026 BrandCasting · Todos los derechos reservados
-    </p>
-</div>
-
-<!-- Animación FadeIn -->
-<style>
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(25px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .animate-fadeIn {
-        animation: fadeIn 1s ease-out;
-    }
-</style>
+    <footer class="mt-24 text-center text-gray-500 text-sm">
+        © 2026 BrandCasting API · Todos los derechos reservados
+    </footer>
+</main>
 </body>
 </html>
