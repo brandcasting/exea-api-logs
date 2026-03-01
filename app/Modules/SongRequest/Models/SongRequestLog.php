@@ -19,5 +19,6 @@ class SongRequestLog extends Model
         "pos",
         "client_id",
         "client",
+        "playlist",
     ];
 }

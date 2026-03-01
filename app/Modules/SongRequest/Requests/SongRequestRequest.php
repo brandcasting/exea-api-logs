@@ -22,6 +22,7 @@ class SongRequestRequest extends FormRequest
             'pos'        => 'required|string|max:255',
             'client_id'        => 'required|integer',
             'client'        => 'required|string|max:255',
+            'playlist'        => 'required|string|max:255',
         ];
     }
 }
