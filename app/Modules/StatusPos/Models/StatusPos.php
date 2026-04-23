@@ -14,6 +14,7 @@ class StatusPos extends Model
         'end_date',
         'client_pos',
         'label',
+        'regional',
         'status' => 'boolean',
         'start_date' => 'datetime',
         'end_date' => 'datetime',

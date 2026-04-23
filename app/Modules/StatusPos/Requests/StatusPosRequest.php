@@ -21,6 +21,7 @@ class StatusPosRequest extends FormRequest
             'end_date' => ['nullable', 'date', 'after_or_equal:start_date'],
             'client_pos' => ['nullable', 'integer'],
             'label' => ['nullable', 'string', 'max:255'],
+            'regional' => ['nullable', 'string', 'max:255'],
         ];
     }
 }
